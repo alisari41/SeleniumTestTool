@@ -57,11 +57,14 @@ namespace SeleniumTestTool
 
             // Rasgele bir ürün seçiyorum o ürüne ait en baştaki div için id=p-530088692 bilgisi a link bilgisinin XPath olarak kopyalarsam unutmayayım Tek Tırnak ve arada boşluk yok visual kendi otomatik atıyor düzelt
             driver.FindElement(By.XPath("//*[@id='p-489569060']/div[1]/a")).Click();
+           
             Thread.Sleep(4000);//Bekleme süresi koyuyyorum sayfa yüklensin yoksa patlıyor
 
 
             // Detayları görmek için class=detailPreviewBtn
             driver.FindElement(By.ClassName("detailPreviewBtn")).Click();
+
+            Thread.Sleep(1000);
 
             // Detayları kapatmak için class=btnOk
             driver.FindElement(By.ClassName("btnOk")).Click();
