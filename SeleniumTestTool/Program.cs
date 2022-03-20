@@ -107,10 +107,10 @@ namespace SeleniumTestTool
             // Anasayfaya Dönmek için class=home 
             driver.FindElement(By.XPath("/html/body/div[1]/header/div/a")).Click();
 
-            Thread.Sleep(9000);
+            //Thread.Sleep(9000);
 
             // En son kullanıcı hesabımdan çıkış yapmak için class=logoutBtn
-            driver.FindElement(By.ClassName("logoutBtn")).Click();
+            //driver.FindElement(By.ClassName("logoutBtn")).Click();
 
         }
     }
